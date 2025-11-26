@@ -1,0 +1,3 @@
+[submodule "simstream"]
+	path = simstream
+	url = git@github.com:svaichu/simstream.git
