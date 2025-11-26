@@ -49,6 +49,6 @@ pgrep -f "/bin/bash .* 6080"  | xargs -r kill -9 || true
 sleep 0.5
 
 cd "$NOVNC_DIR"
-./utils/websockify/run 6080 --web "$NOVNC_DIR" localhost:5901 &
+./utils/novnc_proxy --listen localhost:6080 --web "$NOVNC_DIR" --vnc localhost:5901 &
 echo "✔ GUI ready → http://<server-ip>:6080/vnc.html"
 echo "  DISPLAY=:1 exported."

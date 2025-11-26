@@ -1,3 +1,6 @@
 [submodule "simstream"]
 	path = simstream
 	url = git@github.com:svaichu/simstream.git
+[submodule "noVNC"]
+	path = noVNC
+	url = git@github.com:novnc/noVNC.git
